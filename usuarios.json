@@ -1,0 +1,79 @@
+[
+    {
+        "idUsuario": 1,
+        "nombreUsuario": "Super",
+        "apellidoUsuario": "Admin",
+        "contraseñaUsuario": "super_admin_1",
+        "rol": "super_admin"
+    },
+    {
+        "idUsuario": 2,
+        "nombreUsuario": "Admin1",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "admin_1",
+        "rol": "admin"
+    },
+    {
+        "idUsuario": 3,
+        "nombreUsuario": "Admin2",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "admin_2",
+        "rol": "admin"
+    },
+    {
+        "idUsuario": 4,
+        "nombreUsuario": "Usuario1",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "Usuario_1",
+        "rol": "usuario"
+    },
+    {
+        "idUsuario": 5,
+        "nombreUsuario": "Usuario2",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "Usuario_2",
+        "rol": "usuario"
+    },
+    {
+        "idUsuario": 6,
+        "nombreUsuario": "Usuario3",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "Usuario_3",
+        "rol": "usuario"
+    },
+    {
+        "idUsuario": 7,
+        "nombreUsuario": "Usuario4",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "Usuario_4",
+        "rol": "usuario"
+    },
+    {
+        "idUsuario": 8,
+        "nombreUsuario": "Usuario5",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "Usuario_5",
+        "rol": "usuario"
+    },
+    {
+        "idUsuario": 9,
+        "nombreUsuario": "Usuario6",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "Usuario_6",
+        "rol": "usuario"
+    },
+    {
+        "idUsuario": 10,
+        "nombreUsuario": "Usuario7",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "Usuario_7",
+        "rol": "usuario"
+    },
+    {
+        "idUsuario": 11,
+        "nombreUsuario": "Usuario8",
+        "apellidoUsuario": "Apellido",
+        "contraseñaUsuario": "Usuario_8",
+        "rol": "usuario"
+    }
+]
