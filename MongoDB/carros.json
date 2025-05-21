@@ -1,0 +1,90 @@
+[
+  { 
+        "nombre": "Toyota Corolla", 
+        "año": 2018, 
+        "kilometraje": 45000, 
+        "color": "Blanco" 
+    },
+    {    
+        "nombre": "Honda Civic", 
+        "año": 2019, 
+        "kilometraje": 38000, 
+        "color": "Negro" 
+    },
+    { 
+        "nombre": "Ford Focus", 
+        "año": 2017,   
+        "kilometraje": 60000, 
+        "color": "Gris" 
+    },
+    {     
+        "nombre": "Chevrolet Cruze", 
+        "año": 2020, 
+        "kilometraje": 27000, 
+        "color": "Rojo" 
+    },
+    {   
+        "nombre": "Hyundai Elantra", 
+        "año": 2016, 
+        "kilometraje": 72000, 
+        "color": "Azul" 
+    },
+    { 
+        "nombre": "Volkswagen Jetta", 
+        "año": 2021, 
+        "kilometraje": 15000, 
+        "color": "Plata" },
+    { 
+        "nombre": "Kia Forte",
+        "año": 2019, 
+        "kilometraje": 33000, 
+        "color": "Blanco" 
+    },
+    { 
+        "nombre": "Mazda 3", 
+        "año": 2022, "kilometraje": 10000, 
+        "color": "Rojo" 
+    },
+    { 
+        "nombre": "Nissan Sentra", 
+        "año": 2018, 
+        "kilometraje": 50000, 
+        "color": "Negro" 
+    },
+    { 
+        "nombre": "Renault Logan", 
+        "año": 2017, 
+        "kilometraje": 68000, 
+        "color": "Gris" 
+    },
+    {   
+        "nombre": "Peugeot 208", 
+        "año": 2020, 
+        "kilometraje": 24000, 
+        "color": "Azul" 
+    },
+    {  
+        "nombre": "SEAT León", 
+        "año": 2016, 
+        "kilometraje": 81000, 
+        "color": "Blanco" 
+    },
+    { 
+        "nombre": "Fiat Argo", 
+        "año": 2021, 
+        "kilometraje": 12000, 
+        "color": "Gris" 
+    },
+    { 
+        "nombre": "Suzuki Swift", 
+        "año": 2019, 
+        "kilometraje": 39000, 
+        "color": "Negro" 
+    },
+    { 
+        "nombre": "Subaru Impreza", 
+        "año": 2018, 
+        "kilometraje": 46000, 
+        "color": "Azul" 
+    }
+]

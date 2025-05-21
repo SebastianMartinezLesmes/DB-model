@@ -1,4 +1,5 @@
 -- Crear la base de datos
+DROP DATABASE IF  EXISTS usuarios_db;
 CREATE DATABASE IF NOT EXISTS usuarios_db;
 
 -- Usar la base de datos creada
@@ -39,31 +40,46 @@ INSERT INTO usuarios (nombre, apellido, email, edad, ciudad, id_rol) VALUES
 -- Consultar a todos los usuarios
 SELECT * FROM usuarios;
 
--- Usuarios sin apellido
-SELECT * FROM usuarios WHERE apellido IS NULL;
+-- Consulta INNER JOIN para obtener usuarios y sus roles
+SELECT usuarios.nombre, usuarios.apellido, usuarios.email, usuarios.edad, usuarios.ciudad, roles.nombre AS rol
+FROM usuarios
+INNER JOIN roles ON usuarios.id_rol = roles.id;
 
--- Usuarios sin email
-SELECT * FROM usuarios WHERE email IS NULL;
-
--- Usuarios sin edad
-SELECT * FROM usuarios WHERE edad IS NULL;
-
--- Usuarios sin ciudad
-SELECT * FROM usuarios WHERE ciudad IS NULL;
+-----------------------------------------------------------------------------
 
 -- Contar el número de usuarios
 SELECT COUNT(*) AS total_usuarios FROM usuarios;
 
 -- Buscar usuarios por ciudad
-SELECT * FROM usuarios WHERE ciudad = 'Madrid';
+DELIMITER $$
+CREATE PROCEDURE find_users_city (
+    IN p_ciudad VARCHAR(100)
+)
+BEGIN
+    SELECT * FROM usuarios WHERE ciudad = p_ciudad;
+END $$
+DELIMITER ;
+-- CALL find_users_city ('madrid')
 
 -- Actualizar la información de un usuario
-UPDATE usuarios SET apellido = 'Martínez' WHERE nombre = 'Luis';
+DELIMITER $$
+CREATE PROCEDURE update_lastName_by_id (
+    IN p_id INT,
+    IN p_lastName VARCHAR(100)
+)
+BEGIN
+    UPDATE usuarios SET apellido = p_lastName WHERE id = p_id;
+END $$
+DELIMITER ;
+-- CALL update_lastName(#,'')
 
 -- Eliminar un usuario por su ID
-DELETE FROM usuarios WHERE id = 2;
-
--- Consulta INNER JOIN para obtener usuarios y sus roles
-SELECT usuarios.nombre, usuarios.apellido, usuarios.email, usuarios.edad, usuarios.ciudad, roles.nombre AS rol
-FROM usuarios
-INNER JOIN roles ON usuarios.id_rol = roles.id;
+DELIMITER $$
+CREATE PROCEDURE delete_user (
+    IN p_id INT
+)
+BEGIN
+    DELETE FROM usuarios WHERE id = p_id;
+END $$
+DELIMITER ;
+CALL delete_user (2)
